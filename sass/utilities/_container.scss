@@ -4,85 +4,50 @@
   width: 95%;
   margin: 0px auto;
   margin-top: 200px;
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
 }
 .container-2 {
   width: 95%;
   margin: 0px auto;
   margin-top: 80px;
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
 }
 .container-3 {
   width: 90%;
   margin: 0px auto;
   margin-top: 40px;
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
 }
 .section-1 {
   margin-top: -100px;
-  @include homeMedia(1200px) {
-    max-width: 940px;
-  }
 }
 .section-2 {
   margin-top: 80px;
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
 }
 .container-4 {
   width: 90%;
   margin: 0px auto;
   margin-top: 100px;
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
 }
 .section-team {
   margin-top: 100px;
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
 }
 .container-teambanner {
   width: 90%;
   margin: 0px auto;
   margin-top: 80px;
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
 }
 .portfolio-section {
   margin-top: -170px;
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
 }
 .portfolio-container {
   width: 90%;
   margin: 0px auto;
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
 }
 .acation-container {
   width: 95%;
   margin: 0px auto;
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
 }
 .area-testimonials {
   margin-top: 160px;
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
+
   .container-testimonials {
     width: 95%;
     margin: 0px auto;
@@ -92,17 +57,11 @@
   height: 750px;
   margin-top: 130px;
   position: relative;
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
 }
 .Progress-container {
   width: 1140px;
   height: 70px;
   margin: 0px auto;
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
 }
 
 .bottom {
@@ -111,9 +70,6 @@
     width: 95%;
     margin: 0px auto;
   }
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
 }
 
 .footer-container {
@@ -121,9 +77,6 @@
   margin: 0px auto;
   width: 95%;
   height: 730px;
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
 }
 .banner-area-contact {
   margin-top: 220px;
@@ -168,20 +121,36 @@
   padding: 120px 0;
   width: 1600px;
   height: 3280px;
+  @include homePage(945px) {
+    display: flex;
+    flex-direction: column;
+  }
   .blog-container {
     width: 1340px;
     height: 3150px;
     margin-left: 120px;
+    @include homePage(945px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 .blog-section-sec {
   padding: 120px 0;
   width: 1600px;
   height: 3880px;
-  border: 1px solid green;
+  @include homePage(945px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   .blog-container-sec {
     width: 1340px;
     height: 3750px;
     margin-left: 120px;
+    @include homePage(945px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

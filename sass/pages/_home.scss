@@ -81,6 +81,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include homePage(945px) {
+    display: flex;
+    flex-direction: column;
+  }
   .left {
     margin-left: 20px;
     display: flex;
@@ -109,6 +113,7 @@
   .right {
     margin-right: 60px;
     margin-top: 35px;
+
     .section-btn {
       border: 1px solid rgb(196, 31, 31);
       background-color: rgb(196, 31, 31);
@@ -146,6 +151,10 @@
           margin-left: 80px;
           display: flex;
           flex-direction: column;
+          @include homePage(945px) {
+            display: flex;
+            flex-direction: column;
+          }
           .pretittle {
             font-size: 20px;
             display: flex;
@@ -166,6 +175,11 @@
             margin-top: 40px;
             color: grey;
             font-size: 17px;
+            @include homePage(945px) {
+              display: flex;
+              flex-direction: column;
+              width: 300px;
+            }
             .items {
               width: 700px;
               padding: 20px;
@@ -178,6 +192,12 @@
               justify-content: space-between;
               background-color: white;
               margin-top: 60px;
+              @include homePage(945px) {
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                row-gap: 10px;
+              }
               .left-items {
                 display: flex;
                 flex-direction: column;
@@ -319,12 +339,13 @@
       }
     }
   }
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
 }
 .row-portfolio-1 {
   display: flex;
+  @include homePage(945px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   .title-area-portfolio {
     display: flex;
@@ -339,6 +360,9 @@
       .pre-title-portfolio {
         display: flex;
         justify-content: flex-start;
+        @include homePage(945px) {
+          display: none;
+        }
         span {
           padding-top: 4px;
           text-transform: uppercase;
@@ -348,6 +372,9 @@
           color: #b00f0f;
           margin-left: 10px;
           margin-right: 10px;
+          @include homePage(945px) {
+            display: none;
+          }
         }
       }
       h2 {
@@ -357,6 +384,9 @@
         font-size: 48px;
         line-height: 58px;
         color: #181a1c;
+        @include homePage(945px) {
+          display: none;
+        }
       }
     }
     .text-end-portfolio {
@@ -380,9 +410,6 @@
       }
     }
   }
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
 }
 .row-container {
   margin: 0px auto;
@@ -394,11 +421,23 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
+  @include homePage(945px) {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+  }
   .row-acation {
     display: flex;
+    @include homePage(945px) {
+      display: flex;
+      flex-direction: column;
+    }
     .two-part-acation {
       display: flex;
-
+      @include homePage(945px) {
+        display: flex;
+        flex-direction: column;
+      }
       .tittle-area {
         margin-top: 100px;
         h3 {
@@ -408,11 +447,17 @@
           font-weight: 700;
           font-size: 40px;
           line-height: 53px;
+          @include homePage(945px) {
+            margin-bottom: 20px;
+          }
         }
       }
       .acation-btn {
         margin-left: 320px;
         margin-top: 140px;
+        @include homePage(975px) {
+          display: none;
+        }
       }
       a {
         border: 1px solid $main-red;
@@ -432,23 +477,34 @@
       }
     }
   }
-  @include homeMedia(1200px) {
-    max-width: 1140px;
-  }
 }
 .row-testimonials {
   display: flex;
+  @include homePage(945px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
 
   .pretittle-testimonials {
     margin-left: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
+    @include homePage(945px) {
+      margin-left: 20px;
+      margin-top: 150px;
+      display: flex;
+      flex-direction: column;
+    }
     img {
       border: 0;
       vertical-align: middle;
       max-width: 100%;
       height: auto;
+      @include homePage(945px) {
+        display: none;
+      }
     }
     span {
       font-weight: 500;
@@ -457,6 +513,9 @@
       color: #b00f0f;
       margin-left: 10px;
       margin-right: 10px;
+      @include homePage(945px) {
+        margin-left: -160px;
+      }
     }
   }
   h2 {
@@ -515,6 +574,10 @@
       margin-top: 35px;
       margin-left: 20px;
       display: flex;
+      @include homePage(945px) {
+        display: flex;
+        flex-direction: column;
+      }
       h6 {
         font-weight: 700;
         font-size: 20px;
@@ -556,6 +619,10 @@
   justify-content: space-between;
   width: 1140px;
   height: 610px;
+  @include homePage(945px) {
+    display: flex;
+    flex-direction: column;
+  }
   .picture-progress {
     position: absolute;
     left: -10%;
@@ -605,6 +672,10 @@
     }
     .facts-progress {
       display: flex;
+      @include homePage(945px) {
+        display: flex;
+        flex-direction: column;
+      }
       .leftbusiness {
         margin-left: 28px;
         display: flex;
@@ -618,12 +689,19 @@
         padding: 35px;
         align-items: center;
         justify-content: space-between;
+        @include homePage(945px) {
+          display: flex;
+          flex-direction: column;
+        }
         h4 {
           margin-bottom: 3px;
           font-weight: 700;
           font-size: 36px;
           line-height: 48px;
           color: #181a1c;
+          @include homePage(945px) {
+            font-size: 18px;
+          }
         }
         p {
           font-weight: 600;
@@ -638,6 +716,9 @@
           vertical-align: middle;
           max-width: 100%;
           height: auto;
+          @include homePage(945px) {
+            margin-left: 10px;
+          }
         }
       }
     }
@@ -645,9 +726,9 @@
     a {
       position: absolute;
       top: 600px;
-
       border: 1px solid $main-red;
       border-radius: 30px;
+      background-color: $main-red;
       padding: 17px 30px;
       color: white;
       font-weight: 700;
@@ -663,6 +744,10 @@
 }
 .row-bottom {
   display: flex;
+  @include homePage(945px) {
+    display: flex;
+    flex-direction: column;
+  }
   .title-bottom {
     text-align: center;
     margin-left: 580px;

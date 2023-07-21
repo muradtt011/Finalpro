@@ -2,6 +2,11 @@
 @import "../abstracts/index";
 .contact-row {
   display: flex;
+  @include homePage(945px) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
   .contact-tittle {
     width: 500px;
     h1 {
@@ -52,6 +57,9 @@
   width: 1600px;
   height: 590px;
   background: white;
+  @include homePage(945px) {
+    margin-top: 100px;
+  }
   iframe {
     width: 100%;
     height: 100%;
@@ -69,15 +77,25 @@
 }
 .row-form {
   display: flex;
+  @include homePage(945px) {
+    display: flex;
+    flex-direction: column;
+  }
   .form-gap {
     width: 1125px;
     height: 750px;
     box-shadow: 0px 24px 39px rgba(0, 0, 0, 0.05);
     padding: 120px 0;
+    @include homePage(945px) {
+      width: 500px;
+    }
     .title-form {
       margin-top: -80px;
       padding-left: 240px;
       position: relative;
+      @include homePage(945px) {
+        padding-left: 10px;
+      }
       p {
         padding-left: 270px;
         color: $main-red;
@@ -86,11 +104,19 @@
         font-weight: 600;
         text-transform: uppercase;
         margin-top: -5px;
+        @include homePage(945px) {
+          margin-left: -400px;
+        }
       }
       h2 {
         font-weight: 700;
         font-size: 48px;
         line-height: 1.24;
+        @include homePage(945px) {
+          margin-left: -130px;
+          width: 250px;
+          margin-top: 50px;
+        }
       }
     }
     .form-wrapper {
@@ -98,11 +124,19 @@
       width: 800px;
       height: 400px;
       margin: 0px auto;
+      @include homePage(945px) {
+        margin-left: -150px;
+      }
       .name-email {
         display: flex;
         align-items: center;
         justify-content: space-between;
         column-gap: 25px;
+        @include homePage(945px) {
+          display: flex;
+          flex-direction: column;
+          margin-left: -250px;
+        }
         input {
           width: 50%;
           background: #f6f6f6;
@@ -130,6 +164,10 @@
 
         line-height: 28px;
         padding: 0 15px;
+        @include homePage(945px) {
+          width: 65%;
+          margin-left: 20px;
+        }
       }
       textarea {
         padding-top: 15px;

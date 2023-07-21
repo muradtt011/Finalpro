@@ -5,6 +5,10 @@
   column-gap: 36px;
   width: 800px;
   height: 3100px;
+  @include homePage(970px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   article {
     padding-bottom: 140px;
@@ -135,8 +139,16 @@
 /*Contact*/
 .article-gap {
   padding: 120px 0;
+  @include homePage(970px) {
+    display: flex;
+    flex-direction: column;
+  }
   .row-gap {
     display: flex;
+    @include homePage(970px) {
+      display: flex;
+      flex-direction: column;
+    }
     article {
       margin-left: 35px;
       width: 354px;
@@ -183,6 +195,10 @@
   margin-left: 120px;
   display: flex;
   column-gap: 70px;
+  @include homePage(970px) {
+    display: flex;
+    flex-direction: column;
+  }
   article {
     width: 360px;
     height: 440px;
@@ -269,6 +285,7 @@
 }
 /*portfolio article*/
 .row-2-portfolio {
+  position: relative;
   margin-top: 90px;
   margin-left: 40px;
   display: flex;
@@ -277,6 +294,10 @@
   column-gap: 30px;
   flex-wrap: wrap;
   row-gap: 30px;
+  @include homePage(945px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   .portfolio-article {
     width: calc(100% / 3);
@@ -340,6 +361,10 @@
   margin-left: 20px;
   display: flex;
   justify-content: space-between;
+  @include homePage(945px) {
+    display: flex;
+    flex-direction: column;
+  }
   .about-team {
     position: relative;
     overflow: hidden;
@@ -427,6 +452,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include homePage(945px) {
+    display: flex;
+    flex-direction: column;
+  }
   .first {
     width: 400px;
     height: 330px;
@@ -484,6 +513,10 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 30px;
+  @include homePage(945px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   .article-second img {
     position: relative;
@@ -494,6 +527,9 @@
     max-width: 100%;
     height: auto;
     margin-left: 65px;
+    @include homePage(945px) {
+      margin-left: 110px;
+    }
   }
   .article-second img:hover {
     transform: rotate(360deg);
@@ -518,6 +554,9 @@
     margin-top: 20px;
     margin-left: 130px;
     background-color: #b00f0f;
+    @include homePage(945px) {
+      margin-left: 170px;
+    }
   }
   i:hover {
     transform: rotate(360deg);

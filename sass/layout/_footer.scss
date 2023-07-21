@@ -8,6 +8,12 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+  @include homePage(945px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    height: 1800px;
+  }
   .footer-firstimg {
     position: absolute;
     height: 800px;
@@ -23,6 +29,10 @@
     margin-top: 180px;
     margin-left: 165px;
     display: flex;
+    @include homePage(945px) {
+      display: flex;
+      flex-direction: column;
+    }
 
     .background-cta {
       width: 1200px;
@@ -38,6 +48,10 @@
       background-size: cover;
       .row-cta {
         display: flex;
+        @include homePage(945px) {
+          display: flex;
+          flex-direction: column;
+        }
         .left-wrapper {
           margin-top: 20px;
           margin-left: 80px;
@@ -101,6 +115,11 @@
   .rowpart2 {
     padding-top: 130px;
     display: flex;
+    @include homePage(945px) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 80px;
+    }
     .wized1 {
       margin-left: 70px;
       z-index: 5;
@@ -117,6 +136,10 @@
       }
       .quick-inner {
         display: flex;
+        @include homePage(945px) {
+          display: flex;
+          flex-direction: column;
+        }
         .left-links {
           list-style: none;
           padding-left: 0;
@@ -209,6 +232,10 @@
         .single-opening {
           display: flex;
           justify-content: space-between;
+          @include homePage(945px) {
+            display: flex;
+            flex-direction: column;
+          }
           p {
             margin-bottom: 15px;
             color: #fff;
