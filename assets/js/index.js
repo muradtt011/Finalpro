@@ -48,3 +48,19 @@ $(".autoplay").slick({
   autoplay: true,
   autoplaySpeed: 2000,
 });
+
+let scrollPercentage = () => {
+  let scrollProgress = document.getElementById("progress");
+  let progressValue = document.getElementById("progress-value");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  console.log(scrollValue);
+
+  scrollProgress.style.background = `conic-gradient (#03cc65 ${scrollValue}%,#d7d7d7 ${scrollValue}%)`;
+  progressValue.textContent = `${scrollValue}%`;
+};
+window.onscroll = scrollPercentage;
+window.onload = scrollPercentage;

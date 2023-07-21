@@ -104,7 +104,7 @@ header {
       width: 0px;
       height: 2px;
       display: block;
-      background: red;
+      background: $main-red;
       transition: 300ms;
     }
     a:hover::after {
@@ -112,7 +112,7 @@ header {
     }
 
     a:hover {
-      color: darkred;
+      color: $main-red;
     }
 
     @include homePage(1200px) {
