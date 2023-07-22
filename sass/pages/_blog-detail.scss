@@ -385,6 +385,10 @@
           padding: 0 15px;
           outline: none;
           border: none;
+          @include homePage(945px) {
+            width: 350px;
+            height: 300px;
+          }
         }
         textarea {
           position: absolute;
@@ -460,6 +464,8 @@
           font-weight: 400;
           padding: 0 15px;
           font-size: 18px;
+          outline: none;
+          border: none;
         }
         button {
           position: absolute;
